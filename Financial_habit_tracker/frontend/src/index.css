@@ -405,7 +405,7 @@ input {
   width: 255px;
   display: flex;
   flex-direction: column;
-  padding: 28px 19px 20px;
+  padding: 14px 19px 20px;
   color: white;
   background:
     radial-gradient(
@@ -415,18 +415,18 @@ input {
     ),
     linear-gradient(165deg, #414288, #251351);
   z-index: 100;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 .sidebar-brand {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 5px 10px 35px;
+  padding: 5px 10px 20px;
 }
 
 .sidebar-logo {
-  width: 44px;
+  width: 60px;
   height: 44px;
   display: grid;
   place-items: center;
@@ -441,7 +441,7 @@ input {
 .sidebar-brand h3 {
   margin: 0;
   font-family: "Outfit", sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -452,9 +452,9 @@ input {
 }
 
 .sidebar-label {
-  margin: 0 10px 13px;
+  margin: 0 10px 8px;
   color: #bcb4d8;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.5px;
 }
@@ -462,17 +462,17 @@ input {
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  /* gap: 1px; */
 }
 
 .sidebar-link {
-  min-height: 47px;
+  min-height: 42px;
   display: flex;
   align-items: center;
   gap: 14px;
   padding: 0 14px;
   border-radius: 10px;
-  color: #e2def1;
+  color: #e7e4f1;
   text-decoration: none;
   font-size: 13px;
   font-weight: 500;
@@ -501,10 +501,10 @@ input {
   margin-top: 35px;
 }
 
-.sidebar-bottom {
+/* .sidebar-bottom {
   margin-top: auto;
   padding-top: 35px;
-}
+} */
 
 .sidebar-help {
   padding: 16px;
@@ -532,14 +532,14 @@ input {
 
 .sidebar-logout {
   width: 100%;
-  margin-top: 16px;
+  margin-top: 5px;
   padding: 12px;
   border: none;
   border-radius: 10px;
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
   text-align: left;
-  font-size: 13px;
+  font-size: 15px;
   cursor: pointer;
 }
 
@@ -570,7 +570,7 @@ input {
 .topbar-eyebrow,
 .section-eyebrow {
   color: #a882dd;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 800;
   letter-spacing: 1.6px;
 }
@@ -728,15 +728,16 @@ input {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 17px;
+  margin-top: 10px;
 }
 
 .stat-card {
   min-width: 0;
   padding: 21px 19px;
-  border: 1px solid #f0edf4;
-  border-radius: 14px;
-  background: white;
-  box-shadow: 0 4px 16px rgba(49, 32, 75, 0.035);
+     border: 1px solid #dbafc4;
+    border-radius: 14px;
+    background: white;
+    box-shadow: 0 4px 16px #fbe1ed80;
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
@@ -815,9 +816,9 @@ input {
 .dashboard-panel {
   min-width: 0;
   padding: 23px;
-  border: 1px solid #f0edf4;
-  border-radius: 15px;
-  background: white;
+  border: 1px solid #dad3e2;
+    border-radius: 15px;
+    background: #fffdfd;
   box-shadow: 0 4px 16px rgba(49, 32, 75, 0.035);
 }
 
@@ -1415,6 +1416,7 @@ input {
   grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.5fr);
   gap: 20px;
   align-items: start;
+  margin-top: 20px;
 }
 
 .page-form {

@@ -78,7 +78,7 @@ export default function Dashboard() {
       <section className="welcome-section">
         <div>
           <span className="section-eyebrow">YOUR MONEY AT A GLANCE</span>
-          <h1>Welcome back, {JSON.parse(localStorage.getItem('user') || '{}').name?.split(' ')[0] || 'there'}! <span>✦</span></h1>
+          <h1>Welcome back, {JSON.parse(localStorage.getItem('user') || '{}').name?.split(' ')[0] || 'there'}! <span>&#10022;</span></h1>
           <p>Here is what's happening with your finances.</p>
         </div>
 

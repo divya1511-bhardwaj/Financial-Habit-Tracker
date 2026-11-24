@@ -35,7 +35,7 @@ export default function Wealth() {
     try {
       setLoading(true);
       const [itemsRes, summaryRes, snapshotsRes] = await Promise.all([
-        api.get("/wealth"),
+        api.get("/wealth/items"),
         api.get("/wealth/summary"),
         api.get("/wealth/snapshots"),
       ]);
@@ -86,10 +86,10 @@ export default function Wealth() {
       setSaving(true);
 
       if (editingId) {
-        await api.patch(`/wealth/${editingId}`, payload);
+        await api.put(`/wealth/items/${editingId}`, payload);
         setMessage("Wealth item updated successfully.");
       } else {
-        await api.post("/wealth", payload);
+        await api.post("/wealth/items", payload);
         setMessage("Wealth item added successfully.");
       }
 

@@ -17,7 +17,7 @@ export default function Topbar() {
       </div>
 
       <div className="topbar-actions">
-        <div className="topbar-search">
+        {/* <div className="topbar-search">
           <span>⌕</span>
           <input
             type="search"
@@ -25,12 +25,12 @@ export default function Topbar() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-        </div>
+        </div> */}
 
-        <button className="topbar-icon" type="button" aria-label="Notifications">
+        {/* <button className="topbar-icon" type="button" aria-label="Notifications">
           ♧
           <span className="notification-dot"></span>
-        </button>
+        </button> */}
 
         <div className="topbar-profile">
           <div className="profile-avatar">{initials}</div>
