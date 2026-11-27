@@ -2152,3 +2152,176 @@ input {
     overflow: auto;
   }
 }
+
+/* =========================================
+   FINORA SIDEBAR - RESPONSIVE FIX
+========================================= */
+
+/* Desktop */
+@media (min-width: 851px) {
+  .app-layout {
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 255px;
+    height: 100vh;
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .sidebar-link {
+    width: 100%;
+    min-height: 46px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .sidebar-bottom {
+    display: block;
+    margin-top: auto;
+    padding-top: 20px;
+  }
+
+  .main-area {
+    margin-left: 255px;
+    min-width: 0;
+  }
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+  .app-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    max-height: 190px;
+    padding: 12px 14px;
+    overflow: visible;
+    z-index: 1000;
+  }
+
+  .sidebar-brand {
+    padding: 2px 5px 12px;
+  }
+
+  .sidebar-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .sidebar-label {
+    display: none;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 32px;
+    /* scrollbar-width: thin; */
+  }
+
+  .sidebar-link {
+    flex: 0 0 auto;
+    min-height: 40px;
+    padding: 0 13px;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  .sidebar-bottom {
+    display: block;
+    padding-top: 5px;
+  }
+
+  .sidebar-logout {
+    width: auto;
+    min-width: 110px;
+    padding: 9px 14px;
+    margin: 0;
+  }
+
+  .main-area {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .sidebar {
+    max-height: 175px;
+    padding: 10px;
+  }
+
+  .sidebar-brand {
+    padding-bottom: 9px;
+  }
+
+  .sidebar-brand h3 {
+    font-size: 16px;
+  }
+
+  .sidebar-brand span {
+    font-size: 7px;
+  }
+
+  .sidebar-nav {
+    gap: 5px;
+  }
+
+  .sidebar-link {
+    min-height: 37px;
+    padding: 0 10px;
+    gap: 7px;
+    font-size: 11px;
+  }
+
+  .sidebar-icon {
+    width: 17px;
+    font-size: 16px;
+  }
+
+  .sidebar-bottom {
+    padding-top: 3px;
+  }
+
+  .sidebar-logout {
+    min-width: 95px;
+    padding: 7px 11px;
+    font-size: 12px;
+  }
+
+  .topbar {
+    padding: 14px;
+  }
+
+  .main-area,
+  .page-content {
+    width: 100%;
+    min-width: 0;
+  }
+}
